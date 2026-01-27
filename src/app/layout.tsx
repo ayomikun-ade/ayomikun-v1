@@ -10,12 +10,12 @@ const figtree = Figtree({
   subsets: ["latin"],
 });
 const siteConfig = {
-  name: "Ayomikun",
+  name: "Ayomikun Adeosun",
   url: "https://ayomikunade.vercel.app",
   description:
     "Frontend Engineer specializing in crafting high-performance, visually immersive digital experiences, merging retro aesthetics with modern architecture.",
   author: "Ayomikun Adeosun",
-  twitter: "@theayomikun-ade",
+  twitter: "@theayomikunade",
 };
 
 const jetbrainsMono = JetBrains_Mono({
