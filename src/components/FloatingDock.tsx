@@ -40,10 +40,15 @@ const dockItems = [
   },
 ];
 
-export function FloatingDock() {
-  const [isVisible, setIsVisible] = useState(false);
+export function FloatingDock({ alwaysVisible = false }: { alwaysVisible?: boolean }) {
+  const [isVisible, setIsVisible] = useState(alwaysVisible);
 
   useEffect(() => {
+    if (alwaysVisible) {
+      setIsVisible(true);
+      return;
+    }
+
     const handleScroll = () => {
       const heroHeight = window.innerHeight * 0.5; // Show after scrolling 50% of viewport
       const contactSection = document.getElementById("contact");

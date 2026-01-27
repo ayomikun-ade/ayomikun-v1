@@ -53,7 +53,7 @@ export function Contact() {
           className="mb-16 flex justify-center items-end"
         >
           <div>
-            <h2 className="text-3xl md:text-4xl font-mono font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-mono! font-bold text-white mb-4">
               <span className="text-accent">04.</span> CONTACT
             </h2>
             <div className="h-1 w-20 bg-accent/50"></div>

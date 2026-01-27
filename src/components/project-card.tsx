@@ -56,7 +56,7 @@ export function Card({ project }: { project: (typeof allProjects)[0] }) {
 
       <div className="p-6 flex flex-col grow relative z-10">
         <div className="flex justify-between items-start mb-4">
-          <h3 className="text-2xl font-bold font-mono text-white group-hover:text-accent transition-colors">
+          <h3 className="text-2xl font-bold font-mono! text-white group-hover:text-accent transition-colors">
             {project.title}
           </h3>
         </div>

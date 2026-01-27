@@ -17,7 +17,7 @@ export function Projects() {
           className="mb-16 flex justify-between items-end"
         >
           <div>
-            <h2 className="text-3xl md:text-4xl font-mono font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-mono! font-bold text-white mb-4">
               <span className="text-accent">03.</span> PROJECTS
             </h2>
             <div className="h-1 w-20 bg-accent/50"></div>
@@ -44,7 +44,7 @@ export function Projects() {
             href="/projects"
             className="group flex items-center gap-2 px-8 py-3 border border-white/20 text-white font-mono hover:bg-white hover:text-black transition-all"
           >
-            SEE_ALL_PROJECTS
+            SEE ALL PROJECTS
             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

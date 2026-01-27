@@ -14,14 +14,8 @@ const bootSequence = [
 export function Preloader({ onComplete }: { onComplete: () => void }) {
   const [count, setCount] = useState(0);
   const [textIndex, setTextIndex] = useState(0);
-  // const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
-    // setDimensions({
-    //   width: window.innerWidth,
-    //   height: window.innerHeight,
-    // });
-
     const interval = setInterval(() => {
       setCount((prev) => {
         if (prev === 100) {

@@ -18,12 +18,12 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="inline-flex items-center gap-2 px-3 py-1 mb-4 text-xs md:text-sm font-mono tracking-widest text-accent border border-accent/20 bg-accent/5 rounded-full">
+          <h2 className="inline-flex items-center gap-2 px-3 py-1 mb-4 text-xs md:text-sm font-mono! tracking-widest text-accent border border-accent/20 bg-accent/5 rounded-full">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             AVAILABLE
           </h2>
 
-          <div className="text-5xl md:text-8xl font-black tracking-tighter mb-6 font-mono text-white min-h-[1.2em]">
+          <div className="text-5xl md:text-8xl font-black tracking-tighter mb-6 font-mono! text-white min-h-[1.2em]">
             <Typewriter
               options={{
                 strings: [

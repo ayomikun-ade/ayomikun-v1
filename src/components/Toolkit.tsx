@@ -55,7 +55,7 @@ export function Toolkit() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-mono font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-mono! font-bold text-white mb-4">
             <span className="text-accent">02.</span> TOOLKIT
           </h2>
           <div className="h-1 w-20 bg-accent/50"></div>

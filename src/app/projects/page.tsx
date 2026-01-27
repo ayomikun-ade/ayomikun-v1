@@ -8,8 +8,8 @@ import { Card } from "@/components/project-card";
 
 export default function ProjectsPage() {
   return (
-    <main className="min-h-screen pt-24 pb-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <main className="min-h-screen pt-24 pb-12 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <Link
             href="/"
@@ -17,8 +17,8 @@ export default function ProjectsPage() {
           >
             <ArrowLeft className="h-4 w-4" /> BACK_TO_BASE
           </Link>
-          <h1 className="text-4xl md:text-6xl font-black font-mono text-white mb-4">
-            ALL_PROJECTS
+          <h1 className="text-4xl md:text-6xl font-black font-mono! text-white mb-4">
+            ALL PROJECTS
             <span className="text-accent">.</span>
           </h1>
           <p className="text-gray-400 max-w-2xl">

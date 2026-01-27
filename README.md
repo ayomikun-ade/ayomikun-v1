@@ -1,6 +1,7 @@
-# Ayomikun: High-Performance Engineering Portfolio
+# Ayomikun: Portfolio
 
 ## Overview
+
 This project is a professional engineering portfolio designed to showcase high-performance web applications and visually immersive digital experiences. Built with a "retro-modern" aesthetic, it merges 80s-inspired CRT visuals with cutting-edge React architecture. The site features complex layout animations, a custom interaction system, and a terminal-inspired interface to provide recruiters and clients with a memorable user experience. 💻
 
 ## Features
@@ -15,27 +16,31 @@ This project is a professional engineering portfolio designed to showcase high-p
 ## Usage
 
 ### Navigating the Interface
+
 The portfolio uses a scroll-linked navigation system. You can use the header links to jump to specific sections or use the **Floating Dock** that appears once you leave the landing area.
 
 ### Interacting with Projects
+
 Each project card in the "Projects" section features dynamic lighting. Move your cursor over a card to trigger the radial gradient highlight, which uses Framer Motion to track mouse coordinates in real-time. Click **DEMO** to view the live deployment or **REPO** to inspect the source code.
 
 ### Using the Project Archive
+
 For a full list of all engineering experiments, navigate to the `/projects` page. This page uses a responsive grid layout to display the entire project catalog beyond the featured items on the homepage.
 
 ### Contact and Networking
+
 The contact section includes a one-tap email copy feature. Clicking the **COPY** button will automatically add the developer's email to your clipboard, confirmed by a UI state change.
 
 ## Technologies Used
 
-| Technology | Category | Purpose |
-| :--- | :--- | :--- |
-| [Next.js 15](https://nextjs.org/) | Framework | High-performance React framework with Turbopack support. |
-| [TypeScript](https://www.typescriptlang.org/) | Language | Type-safe development for robust component logic. |
-| [Tailwind CSS 4](https://tailwindcss.com/) | Styling | Modern utility-first CSS for complex retro-theming. |
+| Technology                                      | Category  | Purpose                                                  |
+| :---------------------------------------------- | :-------- | :------------------------------------------------------- |
+| [Next.js 15](https://nextjs.org/)               | Framework | High-performance React framework with Turbopack support. |
+| [TypeScript](https://www.typescriptlang.org/)   | Language  | Type-safe development for robust component logic.        |
+| [Tailwind CSS 4](https://tailwindcss.com/)      | Styling   | Modern utility-first CSS for complex retro-theming.      |
 | [Framer Motion](https://www.framer.com/motion/) | Animation | Orchestrating complex UI transitions and mouse tracking. |
-| [Lucide React](https://lucide.dev/) | Icons | Consistent and lightweight vector iconography. |
-| [React 19](https://react.dev/) | Library | Utilizing the latest concurrent rendering features. |
+| [Lucide React](https://lucide.dev/)             | Icons     | Consistent and lightweight vector iconography.           |
+| [React 19](https://react.dev/)                  | Library   | Utilizing the latest concurrent rendering features.      |
 
 ## Author Info
 
