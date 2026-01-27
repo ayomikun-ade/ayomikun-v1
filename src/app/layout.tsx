@@ -3,6 +3,7 @@ import { Figtree, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const figtree = Figtree({
   variable: "--font-figtree",
@@ -10,7 +11,7 @@ const figtree = Figtree({
 });
 const siteConfig = {
   name: "Ayomikun",
-  url: "https://ayomikun",
+  url: "https://ayomikunade.vercel.app",
   description:
     "Frontend Engineer specializing in crafting high-performance, visually immersive digital experiences, merging retro aesthetics with modern architecture.",
   author: "Ayomikun Adeosun",
@@ -58,7 +59,15 @@ export const metadata: Metadata = {
     images: ["/og.png"],
     creator: siteConfig.twitter,
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: { icon: "/favicon.ico" },
+  verification: {
+    google:
+      "google-site-verification=VSSaNAxYWI3r7XiQNRWUrXF5o_RTfiQaIoHirwsPHtw",
+  },
 };
 
 export default function RootLayout({
@@ -66,11 +75,38 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: siteConfig.name,
+    url: siteConfig.url,
+    image: `${siteConfig.url}/og.png`,
+    sameAs: [
+      "https://github.com/ayomikun-ade",
+      "https://linkedin.com/ayomikun-adeosun",
+      "https://twitter.com/theayomikun-ade",
+    ],
+    jobTitle: "Frontend Engineer",
+    description: siteConfig.description,
+    knowsAbout: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Framer Motion",
+      "Web Development",
+    ],
+  };
+
   return (
     <html lang="en" className="scroll-smooth">
       <body
         className={`${figtree.variable} ${jetbrainsMono.variable} antialiased bg-background text-foreground selection:bg-accent selection:text-black`}
       >
+        <SpeedInsights />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="crt-overlay" />
         <Navbar />
         {children}

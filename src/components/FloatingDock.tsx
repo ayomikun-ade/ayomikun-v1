@@ -40,7 +40,11 @@ const dockItems = [
   },
 ];
 
-export function FloatingDock({ alwaysVisible = false }: { alwaysVisible?: boolean }) {
+export function FloatingDock({
+  alwaysVisible = false,
+}: {
+  alwaysVisible?: boolean;
+}) {
   const [isVisible, setIsVisible] = useState(alwaysVisible);
 
   useEffect(() => {
@@ -73,7 +77,7 @@ export function FloatingDock({ alwaysVisible = false }: { alwaysVisible?: boolea
     window.addEventListener("scroll", handleScroll);
     handleScroll(); // Check initially
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [alwaysVisible]);
 
   return (
     <AnimatePresence>
