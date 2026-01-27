@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ayomikun: High-Performance Engineering Portfolio
 
-## Getting Started
+## Overview
+This project is a professional engineering portfolio designed to showcase high-performance web applications and visually immersive digital experiences. Built with a "retro-modern" aesthetic, it merges 80s-inspired CRT visuals with cutting-edge React architecture. The site features complex layout animations, a custom interaction system, and a terminal-inspired interface to provide recruiters and clients with a memorable user experience. 💻
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dynamic Boot Sequence**: A custom-built preloader that simulates a kernel initialization sequence, setting the technical tone of the site.
+- **Retro CRT Overlay**: An interactive scanline and noise filter system that mimics legacy hardware displays while maintaining modern accessibility.
+- **Magnetic Interaction System**: UI components that respond to cursor proximity using vector mathematics for a tactile, premium feel.
+- **Project Archive**: A structured repository of work featuring hover-aware gradient tracking and filtered display modes.
+- **Responsive Floating Dock**: A persistent navigation system that intelligently hides/shows based on viewport context and section thresholds.
+- **System Status Dashboard**: An "About" section designed as a system terminal, providing quick technical metadata about the developer.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Navigating the Interface
+The portfolio uses a scroll-linked navigation system. You can use the header links to jump to specific sections or use the **Floating Dock** that appears once you leave the landing area.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Interacting with Projects
+Each project card in the "Projects" section features dynamic lighting. Move your cursor over a card to trigger the radial gradient highlight, which uses Framer Motion to track mouse coordinates in real-time. Click **DEMO** to view the live deployment or **REPO** to inspect the source code.
 
-## Learn More
+### Using the Project Archive
+For a full list of all engineering experiments, navigate to the `/projects` page. This page uses a responsive grid layout to display the entire project catalog beyond the featured items on the homepage.
 
-To learn more about Next.js, take a look at the following resources:
+### Contact and Networking
+The contact section includes a one-tap email copy feature. Clicking the **COPY** button will automatically add the developer's email to your clipboard, confirmed by a UI state change.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Technology | Category | Purpose |
+| :--- | :--- | :--- |
+| [Next.js 15](https://nextjs.org/) | Framework | High-performance React framework with Turbopack support. |
+| [TypeScript](https://www.typescriptlang.org/) | Language | Type-safe development for robust component logic. |
+| [Tailwind CSS 4](https://tailwindcss.com/) | Styling | Modern utility-first CSS for complex retro-theming. |
+| [Framer Motion](https://www.framer.com/motion/) | Animation | Orchestrating complex UI transitions and mouse tracking. |
+| [Lucide React](https://lucide.dev/) | Icons | Consistent and lightweight vector iconography. |
+| [React 19](https://react.dev/) | Library | Utilizing the latest concurrent rendering features. |
 
-## Deploy on Vercel
+## Author Info
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Ayomikun Adeosun**
+Frontend Engineer specializing in immersive digital experiences.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **GitHub**: [ayomikun-ade](https://github.com/ayomikun-ade)
+- **LinkedIn**: [Ayomikun Adeosun](https://linkedin.com/ayomikun-adeosun)
+- **Twitter**: [@theayomikun-ade](https://twitter.com/theayomikun-ade)
+
+---
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+
+[![Readme was generated by Dokugen](https://img.shields.io/badge/Readme%20was%20generated%20by-Dokugen-brightgreen)](https://www.npmjs.com/package/dokugen)
