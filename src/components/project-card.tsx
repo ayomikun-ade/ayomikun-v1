@@ -33,12 +33,12 @@ export function Card({ project }: { project: (typeof allProjects)[0] }) {
       />
 
       {/* Image Container */}
-      <div className="relative h-48 w-full overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-accent/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-all duration-500" />
-        <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-all duration-500" />
+      <div className="relative h-80 max-md:h-52 w-full overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 max-md:opacity-0 bg-accent/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-all duration-500" />
+        <div className="absolute inset-0 max-md:opacity-0 bg-black/20 z-10 group-hover:bg-transparent transition-all duration-500" />
 
         {/* Scanline Effect */}
-        <div className="absolute inset-0 z-20 opacity-30 group-hover:opacity-10 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-size-[100%_4px,6px_100%]" />
+        <div className="absolute inset-0 max-md:opacity-0 z-20 opacity-30 group-hover:opacity-10 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-size-[100%_4px,6px_100%]" />
 
         <motion.div
           className="w-full h-full"
@@ -49,7 +49,7 @@ export function Card({ project }: { project: (typeof allProjects)[0] }) {
             src={project.image}
             alt={project.title}
             fill
-            className="object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:contrast-100 transition-all duration-500"
+            className="object-cover group-hover:scale-105 object-top md:filter md:grayscale md:contrast-125 md:group-hover:grayscale-0 md:group-hover:contrast-100 transition-all duration-500"
           />
         </motion.div>
       </div>

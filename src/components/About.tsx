@@ -38,9 +38,9 @@ export function About() {
               technologies to build high-performance web applications.
             </p>
             <p>
-              When I&apos;m not coding, you can find me exploring new
-              technologies, contributing to open-source, or refining my craft to
-              deliver the best possible user experiences.
+              When I&apos;m not coding, you can find me listening to music,
+              reading books, or refining my craft to deliver the best possible
+              user experiences.
             </p>
           </motion.div>
 

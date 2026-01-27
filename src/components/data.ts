@@ -1,92 +1,50 @@
 export const allProjects = [
   {
     title: "Nerdwork",
-    desc: "A high-performance SaaS analytics dashboard with real-time data visualization and predictive modeling.",
+    desc: "Nerdwork is the home for fans: a creative entertainment studio & thriving community best known for its annual Comic-Con. They are the intersection of storytelling, tech, culture, and fandom.",
     tags: ["Next.js", "Typescript", "Tanstack Query"],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
-    live: "#",
+    image: "/portfolio/nerdwork-port.png",
+    live: "https://www.nerdworkng.com//",
     github: "#",
   },
   {
     title: "Resolve.vote",
-    desc: "Decentralized NFT marketplace focusing on generative audio art. Features smart contract integration.",
+    desc: "A transparent voting system designed for community governance and decision resolution.",
     tags: ["Next.js", "Typescript", "Tanstack Query"],
-    image:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
-    live: "#",
+    image: "/portfolio/resolve-port.png",
+    live: "https://resolve.vote/",
     github: "#",
   },
   {
     title: "Audiophile",
-    desc: "End-to-end encrypted messaging application with self-destructing messages and offline support.",
+    desc: "A premium e-commerce experience for high-fidelity audio equipment, featuring a seamless cart system.",
     tags: ["Next.js", "Convex", "Typescript", "Framer Motion"],
-    image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
-    live: "#",
-    github: "#",
+    image: "/portfolio/audiophile-port.png",
+    live: "https://audiophile-five-hazel.vercel.app/",
+    github: "https://github.com/ayomikun-ade/audiophile",
   },
   {
     title: "Valentine Verses",
-    desc: "Web-based 3D rendering engine for displaying procedural terrain and atmospheric effects.",
+    desc: "An AI-powered poetry generator leveraging Groq Cloud for instant, personalized romantic verses.",
     tags: ["React", "Framer", "Groq Cloud", "FastAPI"],
-    image:
-      "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=800&auto=format&fit=crop",
-    live: "#",
-    github: "#",
+    image: "/portfolio/valentine-port.png",
+    live: "https://valentine-verses.vercel.app/",
+    github: "https://github.com/ayomikun-ade/valentineverses.ui",
   },
   {
     title: "Aurela",
-    desc: "A high-performance SaaS analytics dashboard with real-time data visualization and predictive modeling.",
+    desc: "A visually immersive landing page for a skin care agency, utilizing advanced motion primitives.",
     tags: ["Next.js", "Framer Motion"],
-    live: "#",
-    github: "#",
-    image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
+    live: "https://aurela.pxxl.click/",
+    github: "https://github.com/ayomikun-ade/aurela",
+    image: "/portfolio/aurela-port.png   ",
   },
   {
     title: "FixFlow",
-    desc: "Decentralized NFT marketplace focusing on generative audio art. Features smart contract integration.",
+    desc: "A streamlined issue tracking application for property management with real-time status updates.",
     tags: ["Nextjs", "Convex", "Clerk", "Typescript"],
-    live: "#",
-    github: "#",
-    image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    title: "ECHO_CHAT",
-    desc: "End-to-end encrypted messaging application with self-destructing messages and offline support.",
-    tags: ["Socket.io", "Redis", "Node.js"],
-    live: "#",
-    github: "#",
-    image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    title: "VOID_ENGINE",
-    desc: "Web-based 3D rendering engine for displaying procedural terrain and atmospheric effects.",
-    tags: ["Three.js", "WebGL", "GLSL"],
-    live: "#",
-    github: "#",
-    image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    title: "QUANTUM_NOTES",
-    desc: "Markdown-based note-taking app with bi-directional linking and graph visualization.",
-    tags: ["React", "D3.js", "Electron"],
-    live: "#",
-    github: "#",
-    image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    title: "CYBER_AUTH",
-    desc: "Passwordless authentication provider using WebAuthn and biometrics.",
-    tags: ["Go", "Svelte", "WebAuthn"],
-    live: "#",
-    github: "#",
-    image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
+    live: "https://fix-flow-react.vercel.app/",
+    github: "https://github.com/ayomikun-ade/fix-flow-react",
+    image: "/portfolio/fixflow-port.png",
   },
 ];

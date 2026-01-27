@@ -4,26 +4,32 @@ import { motion } from "framer-motion";
 import {
   Mail,
   Github,
-  Linkedin,
+  // Linkedin,
   Twitter,
   Copy,
   Check,
   ArrowUpRight,
+  FileText,
 } from "lucide-react";
 import { useState } from "react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
 const socialLinks = [
   { name: "GITHUB", icon: Github, href: "https://github.com/ayomikun-ade" },
-  {
-    name: "LINKEDIN",
-    icon: Linkedin,
-    href: "https://linkedin.com/ayomikun-adeosun",
-  },
+  // {
+  //   name: "LINKEDIN",
+  //   icon: Linkedin,
+  //   href: "https://linkedin.com/ayomikun-adeosun",
+  // },
   {
     name: "TWITTER",
     icon: Twitter,
     href: "https://twitter.com/theayomikun-ade",
+  },
+  {
+    name: "RESUME",
+    icon: FileText,
+    href: "/resume.pdf",
   },
 ];
 

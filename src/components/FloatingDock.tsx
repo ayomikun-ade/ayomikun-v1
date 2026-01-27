@@ -2,7 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Linkedin, Twitter, FileText, Mail } from "lucide-react";
+import {
+  Github,
+  // Linkedin,
+  Twitter,
+  FileText,
+  Mail,
+} from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -13,12 +19,12 @@ const dockItems = [
     href: "https://github.com/ayomikun-ade",
     external: true,
   },
-  {
-    name: "LinkedIn",
-    icon: Linkedin,
-    href: "https://linkedin.com/ayomikun-adeosun",
-    external: true,
-  },
+  // {
+  //   name: "LinkedIn",
+  //   icon: Linkedin,
+  //   href: "https://linkedin.com/ayomikun-adeosun",
+  //   external: true,
+  // },
   {
     name: "Twitter",
     icon: Twitter,
