@@ -12,16 +12,16 @@ interface MagneticButtonProps {
   external?: boolean;
 }
 
-export function MagneticButton({ 
-  children, 
+export function MagneticButton({
+  children,
   className,
   onClick,
   href,
-  external = false
+  external = false,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  
+
   const handleMouse = (e: React.MouseEvent) => {
     const { clientX, clientY } = e;
     // @ts-ignore
@@ -39,27 +39,44 @@ export function MagneticButton({
 
   const content = (
     <motion.div
-        // @ts-ignore
-        ref={ref}
-        className={className}
-        animate={{ x, y }}
-        transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
-        onMouseMove={handleMouse}
-        onMouseLeave={reset}
+      // @ts-ignore
+      ref={ref}
+      className={className}
+      animate={{ x, y }}
+      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
+      onMouseMove={handleMouse}
+      onMouseLeave={reset}
     >
-        {children}
+      {children}
     </motion.div>
   );
 
   if (href) {
-      if (external) {
-          return <a href={href} target="_blank" rel="noopener noreferrer" className="inline-block" onClick={onClick}>{content}</a>;
-      }
-      return <Link href={href} className="inline-block" onClick={onClick}>{content}</Link>;
+    if (external) {
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block"
+          onClick={onClick}
+        >
+          {content}
+        </a>
+      );
+    }
+    return (
+      <Link href={href} className="inline-block" onClick={onClick}>
+        {content}
+      </Link>
+    );
   }
 
   return (
-    <button onClick={onClick} className="inline-block border-none bg-transparent p-0 outline-none">
+    <button
+      onClick={onClick}
+      className="inline-block border-none bg-transparent p-0 outline-none"
+    >
       {content}
     </button>
   );

@@ -28,7 +28,7 @@ const dockItems = [
   {
     name: "Twitter",
     icon: Twitter,
-    href: "https://twitter.com/theayomikun-ade",
+    href: "https://twitter.com/theayomikunade",
     external: true,
   },
   {

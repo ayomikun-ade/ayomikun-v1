@@ -49,7 +49,7 @@ Frontend Engineer specializing in immersive digital experiences.
 
 - **GitHub**: [ayomikun-ade](https://github.com/ayomikun-ade)
 - **LinkedIn**: [Ayomikun Adeosun](https://linkedin.com/ayomikun-adeosun)
-- **Twitter**: [@theayomikun-ade](https://twitter.com/theayomikun-ade)
+- **Twitter**: [@theayomikun-ade](https://twitter.com/theayomikunade)
 
 ---
 

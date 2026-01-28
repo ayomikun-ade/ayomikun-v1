@@ -83,7 +83,7 @@ export default function RootLayout({
     sameAs: [
       "https://github.com/ayomikun-ade",
       "https://linkedin.com/ayomikun-adeosun",
-      "https://twitter.com/theayomikun-ade",
+      "https://twitter.com/theayomikunade",
     ],
     jobTitle: "Frontend Engineer",
     description: siteConfig.description,

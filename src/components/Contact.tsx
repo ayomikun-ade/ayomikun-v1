@@ -24,7 +24,7 @@ const socialLinks = [
   {
     name: "TWITTER",
     icon: Twitter,
-    href: "https://twitter.com/theayomikun-ade",
+    href: "https://twitter.com/theayomikunade",
   },
   {
     name: "RESUME",

@@ -7,7 +7,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { name: "Start", href: "/#hero" },
+  { name: "Home", href: "/#hero" },
   { name: "About", href: "/#about" },
   { name: "Toolkit", href: "/#toolkit" },
   { name: "Projects", href: "/#projects" },
