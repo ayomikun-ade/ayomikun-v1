@@ -2,20 +2,21 @@
 
 import { motion } from "framer-motion";
 import {
-  Mail,
-  Github,
+  Mail01Icon,
+  GithubIcon,
   // Linkedin,
-  Twitter,
-  Copy,
-  Check,
-  ArrowUpRight,
-  FileText,
-} from "lucide-react";
+  NewTwitterIcon,
+  Copy01Icon,
+  Tick02Icon,
+  ArrowUpRight01Icon,
+  File01Icon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { useState } from "react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
 const socialLinks = [
-  { name: "GITHUB", icon: Github, href: "https://github.com/ayomikun-ade" },
+  { name: "GITHUB", icon: GithubIcon, href: "https://github.com/ayomikun-ade" },
   // {
   //   name: "LINKEDIN",
   //   icon: Linkedin,
@@ -23,13 +24,13 @@ const socialLinks = [
   // },
   {
     name: "TWITTER",
-    icon: Twitter,
+    icon: NewTwitterIcon,
     href: "https://twitter.com/theayomikunade",
   },
   {
     name: "RESUME",
-    icon: FileText,
-    href: "/resume.pdf",
+    icon: File01Icon,
+    href: "https://docs.google.com/document/d/1LY1XpKJjnpnB-WVu8ItP7T69raSE1yFmjwHsXsNYVqY/edit?usp=sharing",
   },
 ];
 
@@ -98,9 +99,13 @@ export function Contact() {
                 className="flex-1 md:flex-none flex items-center justify-center gap-2 px-6 py-3 bg-card-bg border border-white/20 text-white font-bold font-mono hover:bg-white/10 transition-colors rounded-lg"
               >
                 {copied ? (
-                  <Check className="h-4 w-4 text-green-400" />
+                  <HugeiconsIcon
+                    icon={Tick02Icon}
+                    size={16}
+                    className="text-green-400"
+                  />
                 ) : (
-                  <Copy className="h-4 w-4" />
+                  <HugeiconsIcon icon={Copy01Icon} size={16} />
                 )}
                 {copied ? "COPIED" : "COPY"}
               </MagneticButton>
@@ -109,7 +114,7 @@ export function Contact() {
                 href={`mailto:${email}`}
                 className="w-full flex items-center justify-center gap-2 px-8 py-3 bg-white text-black font-bold font-mono hover:bg-accent transition-colors rounded-lg"
               >
-                <Mail className="h-4 w-4" />
+                <HugeiconsIcon icon={Mail01Icon} size={18} />
                 SEND_MAIL
               </MagneticButton>
             </div>
@@ -126,11 +131,19 @@ export function Contact() {
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-3 p-4 border border-white/10 bg-black/40 hover:border-accent/50 transition-all hover:-translate-y-1"
             >
-              <link.icon className="h-5 w-5 text-gray-400 group-hover:text-accent transition-colors" />
+              <HugeiconsIcon
+                icon={link.icon}
+                size={20}
+                className="text-gray-400 group-hover:text-accent transition-colors"
+              />
               <span className="font-mono text-sm text-gray-300 group-hover:text-white transition-colors">
                 {link.name}
               </span>
-              <ArrowUpRight className="h-3 w-3 text-gray-500 group-hover:text-accent opacity-0 group-hover:opacity-100 transition-all" />
+              <HugeiconsIcon
+                icon={ArrowUpRight01Icon}
+                size={12}
+                className="text-gray-500 group-hover:text-accent opacity-0 group-hover:opacity-100 transition-all"
+              />
             </a>
           ))}
         </div>

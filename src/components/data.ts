@@ -4,7 +4,7 @@ export const allProjects = [
     desc: "Nerdwork is the home for fans: a creative entertainment studio & thriving community best known for its annual Comic-Con. They are the intersection of storytelling, tech, culture, and fandom.",
     tags: ["Next.js", "Typescript", "Tanstack Query"],
     image: "/portfolio/nerdwork-port.png",
-    live: "https://www.nerdworkng.com//",
+    live: "https://www.nerdworkng.com/",
     github: "#",
   },
   {
@@ -22,6 +22,21 @@ export const allProjects = [
     image: "/portfolio/audiophile-port.png",
     live: "https://audiophile-five-hazel.vercel.app/",
     github: "https://github.com/ayomikun-ade/audiophile",
+  },
+  {
+    title: "CDS Attendance Management System",
+    desc: "A secure, geofenced web app that automates NYSC CDS attendance with real-time location verification and automated eligibility reporting.",
+    tags: [
+      "Nextjs",
+      "Convex",
+      "Clerk",
+      "Geo-fencing",
+      "Shadcn ui",
+      "Typescript",
+    ],
+    image: "/portfolio/cds-port.png",
+    live: "https://edb-ams.vercel.app/",
+    github: "https://github.com/ayomikun-ade/cds-ams",
   },
   {
     title: "Valentine Verses",
@@ -42,7 +57,7 @@ export const allProjects = [
   {
     title: "FixFlow",
     desc: "A streamlined issue tracking application for property management with real-time status updates.",
-    tags: ["Nextjs", "Convex", "Clerk", "Typescript"],
+    tags: ["Nextjs", "Typescript"],
     live: "https://fix-flow-react.vercel.app/",
     github: "https://github.com/ayomikun-ade/fix-flow-react",
     image: "/portfolio/fixflow-port.png",

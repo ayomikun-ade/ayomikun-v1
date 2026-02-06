@@ -1,5 +1,6 @@
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { LinkSquare02Icon, GithubIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import Image from "next/image";
 import { allProjects } from "./data";
@@ -66,7 +67,7 @@ export function Card({ project }: { project: (typeof allProjects)[0] }) {
         </p>
 
         <div className="flex flex-wrap gap-2 mb-8">
-          {project.tags.map((tag) => (
+          {project.tags.slice(0, 4).map((tag) => (
             <span
               key={tag}
               className="px-2 py-1 text-xs font-mono text-accent border border-accent/20 bg-accent/5 rounded-sm"
@@ -74,6 +75,18 @@ export function Card({ project }: { project: (typeof allProjects)[0] }) {
               {tag}
             </span>
           ))}
+          {project.tags.length > 4 && (
+            <div className="relative group/tooltip inline-block">
+              <span className="px-2 py-1 text-xs font-mono text-accent border border-accent/20 bg-accent/5 rounded-sm cursor-help">
+                +{project.tags.length - 4}
+              </span>
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-200 pointer-events-none">
+                <div className="px-2 py-1 bg-black/90 border border-accent/20 text-accent text-xs rounded whitespace-nowrap backdrop-blur-sm shadow-xl">
+                  {project.tags.slice(4).join(", ")}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="flex gap-4 mt-auto">
@@ -82,14 +95,15 @@ export function Card({ project }: { project: (typeof allProjects)[0] }) {
             external
             className="flex items-center gap-2 px-4 py-2 bg-white text-black font-bold text-sm rounded-sm hover:bg-accent transition-colors"
           >
-            <ExternalLink className="h-4 w-4" /> DEMO
+            <HugeiconsIcon icon={LinkSquare02Icon} size={16} strokeWidth={2} />{" "}
+            DEMO
           </MagneticButton>
           <MagneticButton
             href={project.github}
             external
             className="flex items-center gap-2 px-4 py-2 border border-white/20 text-white font-bold text-sm rounded-sm hover:bg-white/10 transition-colors"
           >
-            <Github className="h-4 w-4" /> REPO
+            <HugeiconsIcon icon={GithubIcon} size={16} strokeWidth={2} /> REPO
           </MagneticButton>
         </div>
       </div>

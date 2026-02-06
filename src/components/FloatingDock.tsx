@@ -3,19 +3,19 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Github,
-  // Linkedin,
-  Twitter,
-  FileText,
-  Mail,
-} from "lucide-react";
+  GithubIcon,
+  NewTwitterIcon,
+  Mail01Icon,
+  File01Icon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const dockItems = [
   {
     name: "GitHub",
-    icon: Github,
+    icon: GithubIcon,
     href: "https://github.com/ayomikun-ade",
     external: true,
   },
@@ -27,20 +27,20 @@ const dockItems = [
   // },
   {
     name: "Twitter",
-    icon: Twitter,
+    icon: NewTwitterIcon,
     href: "https://twitter.com/theayomikunade",
     external: true,
   },
   {
     name: "Email",
-    icon: Mail,
+    icon: Mail01Icon,
     href: "mailto:ayoadeosun10@gmail.com",
     external: true,
   },
   {
     name: "Resume",
-    icon: FileText,
-    href: "/resume.pdf",
+    icon: File01Icon,
+    href: "https://docs.google.com/document/d/1LY1XpKJjnpnB-WVu8ItP7T69raSE1yFmjwHsXsNYVqY/edit?usp=sharing",
     external: true,
     highlight: true,
   },
@@ -109,9 +109,12 @@ export function FloatingDock({
                     : "text-gray-400 hover:text-white hover:bg-white/10",
                 )}
               >
-                <item.icon
+                <HugeiconsIcon
+                  icon={item.icon}
+                  size={20}
+                  strokeWidth={1.5}
                   className={cn(
-                    "w-5 h-5 group-hover:text-accent transition-colors",
+                    "group-hover:text-accent transition-colors",
                     item.highlight && " group-hover:text-black",
                   )}
                 />

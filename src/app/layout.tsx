@@ -9,19 +9,20 @@ const figtree = Figtree({
   variable: "--font-figtree",
   subsets: ["latin"],
 });
-const siteConfig = {
-  name: "Ayomikun Adeosun",
-  url: "https://ayomikunade.vercel.app",
-  description:
-    "Frontend Engineer specializing in crafting high-performance, visually immersive digital experiences, merging retro aesthetics with modern architecture.",
-  author: "Ayomikun Adeosun",
-  twitter: "@theayomikunade",
-};
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
+
+const siteConfig = {
+  name: "Ayomikun Adeosun",
+  url: "https://ayomikunade.vercel.app",
+  description:
+    "Ayomikun Adeosun is a Frontend Engineer specializing in high-performance, visually immersive web applications using Next.js, React, and TypeScript.",
+  author: "Ayomikun Adeosun",
+  twitter: "@theayomikunade",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
