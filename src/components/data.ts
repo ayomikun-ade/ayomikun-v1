@@ -39,6 +39,14 @@ export const allProjects = [
     github: "https://github.com/ayomikun-ade/cds-ams",
   },
   {
+    title: "Secret Ink",
+    desc: "An invite-based anonymous confession board featuring real-time updates, anonymous posting and reaction support.",
+    tags: ["Nextjs", "Convex", "TypeScript", "Tailwind"],
+    image: "/portfolio/secretink-port.png",
+    live: "https://secret-ink.pxxl.click/",
+    github: "https://github.com/ayomikun-ade/secret-ink",
+  },
+  {
     title: "Valentine Verses",
     desc: "An AI-powered poetry generator leveraging Groq Cloud for instant, personalized romantic verses.",
     tags: ["React", "Framer", "Groq Cloud", "FastAPI"],
